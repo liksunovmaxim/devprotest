@@ -1,0 +1,40 @@
+.site-footer {
+  .site-container {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+
+    a {
+      transition: opacity .2s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    li{
+      margin-right: 7px;
+    }
+  }
+
+  .copy {
+    font-size: 0.625em;
+    padding-top: 3px;
+    position: relative;
+    z-index: 2;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
